@@ -10,5 +10,5 @@ Codeshare lets you create collaborative docs with CodeMirror and ShareJs.
 
 ## Running
    node bin/codeshare.js
-
-
+   open 2 browser windows to http://localhost:8000
+   start typing!
