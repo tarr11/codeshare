@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
   <head>
-    <title>share-mirror: codemirror + sharejs</title>
+    <title>codeshare: codemirror + sharejs</title>
     <link rel="stylesheet" href="../lib/codemirror.css">
     <script src="../lib/codemirror.js"></script>
     <script src="../mode/xml/xml.js"></script>
-    <link rel="stylesheet" href="../doc/docs.css">
+   <link rel="stylesheet" href="../doc/docs.css">
 
     <style type="text/css">
       .codemirror {border-top: 1px solid black; border-bottom: 1px solid black;}
@@ -13,22 +13,29 @@
     </style>
   </head>
   <body>
-    <h1>share-mirror: codemirror + sharejs</h1>
+    <h1>codeshare: codemirror + sharejs</h1>
 
     <form><textarea id="code" name="code">
 </textarea></form>
 
-    <script>
-var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-  mode: "application/xml",
-  lineNumbers: true,
-  lineWrapping: true,
-  onCursorActivity: function() {
-    editor.setLineClass(hlLine, null);
-    hlLine = editor.setLineClass(editor.getCursor().line, "activeline");
-  }
-});
-var hlLine = editor.setLineClass(0, "activeline");
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/share/share.js"></script>
+ <script src="/codemirror_attach.js"></script>
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: "application/xml",
+        lineNumbers: true,
+        lineWrapping: true,
+        onCursorActivity: function() {
+            editor.setLineClass(hlLine, null);
+            hlLine = editor.setLineClass(editor.getCursor().line, "activeline");
+        }
+    });
+    var hlLine = editor.setLineClass(0, "activeline");
+    sharejs.open('hello', 'text', function(error, doc) {
+        doc.attach_codemirror(editor);
+    });
+
 </script>
 
     <p>CodeMirror + ShareJS integration</p>
