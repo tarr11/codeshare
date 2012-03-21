@@ -1,1 +1,1 @@
-web node bin/codeshare.js
+web: node bin/codeshare.js
