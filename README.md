@@ -2,7 +2,9 @@ Codeshare
 =========
 
 ## Description
-Codeshare lets you create collaborative docs with [CodeMirror](http://www.codemirror.net) and [ShareJs](http://www.sharejs.org)  
+Codeshare lets you create collaborative docs (like etherpad) with [CodeMirror](http://www.codemirror.net) and [ShareJs](http://www.sharejs.org)  
+
+This code was inspired by the ACE version on ShareJS.
 
 ## Installation
 ```
