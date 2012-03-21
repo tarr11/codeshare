@@ -25,6 +25,6 @@ var options = {db: {type: 'memory'}}; // See docs for options. {type: 'redis'} t
 
 // Attach the sharejs REST and Socket.io interfaces to the server
 sharejs.attach(server, options);
-
-server.listen(8000);
-console.log('Server running at http://127.0.0.1:8000/');
+var port = process.env.PORT || 3000;
+server.listen(port);
+console.log('Server running at http://127.0.0.1:' + port);
