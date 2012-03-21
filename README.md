@@ -2,7 +2,7 @@ Codeshare
 =========
 
 ## Description
-Codeshare lets you create collaborative docs with CodeMirror and ShareJs.  
+Codeshare lets you create collaborative docs with [CodeMirror](http://www.codemirror.net) and [ShareJs](http://www.sharejs.org)  
 
 ## Installation
 ```
