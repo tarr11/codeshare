@@ -5,8 +5,8 @@ Codeshare
 Codeshare lets you create collaborative docs with CodeMirror and ShareJs.  
 
 ## Installation
-   # git clone git://github.com/tarr11/codeshare
-   # npm install
+   $ git clone git://github.com/tarr11/codeshare
+   $ npm install
 
 ## Running
    node bin/codeshare.js
@@ -17,5 +17,9 @@ Codeshare lets you create collaborative docs with CodeMirror and ShareJs.
  
 ## Live Demo
 http://codesharejs.herokuapp.com/
-note, this doesn't work too well because of Heroku's restrictions on Socket.io, but you'll get the idea.  http://devcenter.heroku.com/articles/using-socket-io-with-node-js-on-heroku
+
+note, this doesn't work too well because of Heroku's restrictions on Socket.io, but you'll get the idea. 
+
+http://devcenter.heroku.com/articles/using-socket-io-with-node-js-on-heroku
+
 

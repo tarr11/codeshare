@@ -130,7 +130,7 @@
       end = editorDoc.posFromIndex(pos + text.length);
       editorDoc.replaceRange("", start, end);
       //range = Range.fromPoints(offsetToPos(pos), offsetToPos(pos + text.length));
-      editorDoc.remove(range);
+     //editorDoc.remove(range);
       suppress = false;
       return check();
     });
