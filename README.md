@@ -25,3 +25,5 @@ http://codesharejs.herokuapp.com/
 note, this doesn't work too well because of Heroku's restrictions on Socket.io, but you'll get the idea. 
 
 http://devcenter.heroku.com/articles/using-socket-io-with-node-js-on-heroku
+
+This code is available under the MIT License.
