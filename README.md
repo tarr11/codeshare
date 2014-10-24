@@ -3,7 +3,7 @@ Codeshare
 
 NOTE - this project has more or less been merged into ShareJs.  Check out the example on the ShareJS repo:
 
-https://github.com/share/ShareJS/blob/master/examples/cm/index.html
+https://github.com/share/share-codemirror
 
 
 
